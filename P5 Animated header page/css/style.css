@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.2)),  url("../images/bg\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav .logo{
+    
+    width: 25%;
+    text-align: center;
+}
+
+
+nav .logo img{
+    height: 70px;
+    width: 140px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+nav .navbar{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+nav .navbar a{
+    width: 25%;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+nav .navbar a:first-child{
+    color: #00b894;
+}
+
+nav .navbar a:hover{
+    color: #00b894;
+}
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    transition: all 1s ease;
+}
+
+/* main{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    
+} */
+section{
+
+}
+
+section h3{
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 200;
+    text-shadow: 3px 3px 4px black;    
+}
+
+section h1{
+    font-size: 60px;
+    font-weight: 500;
+    text-shadow: 3px 4px 6px black;
+    margin: 20px 0px;    
+}
+
+section p{
+    font-size: 20px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 15px;    
+}
+
+.btn button{
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+
+}
+
+.btn .btn1{
+    background-color: white;
+    border: 2px solid #00b894;
+    color:  #00b894;
+    font-weight: 600;
+
+}
+
+.btn .btn1:hover{
+    background-color: #00b894;
+    border: 2px solid #ffffff;
+    color: white;
+
+}
+
+.btn .btn2{
+    background-color: #00b894;
+    border: 2px solid #ffffff;
+    color: white;
+    font-weight: 600;
+
+}
+
+.btn .btn2:hover{
+    background-color: white;
+    border: 2px solid #00b894;
+    color:  #00b894;
+
+}
+
+
+.change_content::after{
+    content: "";
+    animation: changetext 13s infinite linear;
+    color: #00b894;
+
+}
+
+@keyframes changetext{
+    0%{content: "Dancer";}
+    20%{content: "painter";}
+    35%{content: "theater";}
+    60%{content: "Designer";}
+    80%{content: "singer";}
+    100%{content: "developer";}
+}
