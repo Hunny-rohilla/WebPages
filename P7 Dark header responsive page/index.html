@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Hunny Rohilla</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                    <img src="images/dna.png" alt="logo">
+            </div>
+            <div class="list" id="menu_small">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">gallary</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- menu button -->
+        <a href="#" id="iconbar" onclick="responsive_menu()">==</a>
+
+        <div class="content">
+            <section>
+            <h2>Artist / youtuber / Web developer</h2>
+            <h1>Hunny staR</h1>
+            <button>like</button>
+            <button>subscribe</button>
+            </section>
+        </div>
+
+        <script>
+            function responsive_menu(){
+                var e=document.getElementById('menu_small');
+                if(e.className=== 'list'){
+                    e.className += " responsive";
+                }
+                else
+                {
+                    e.className='list';
+                }
+            }
+        </script>
+
+    </header>
+
+</body>
+</html>
