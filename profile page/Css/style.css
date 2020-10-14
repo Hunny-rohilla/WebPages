@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+.bgimage{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../Images/bgpic.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 5px #000000;
+    text-transform: capitalize;
+}
+
+.profile{
+    border-radius: 10%;
+    width: 330px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+}
+
+img{
+    height: 250px;
+    border-radius: 60%;
+    margin-bottom: 10px;
+}
+.profile h2{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.profile h3{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin: 10px 0px;
+}
+
+i{
+    color: #ffffff;
+    margin-top: 15px;
+    padding-left: 9px;
+
+
+}
+
+i:hover{
+    color: rgb(71, 195, 211);
+}
